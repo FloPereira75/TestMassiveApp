@@ -249,7 +249,7 @@ body {
 }
 
 .send-msg-box {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     display: flex;
     align-items: center;
