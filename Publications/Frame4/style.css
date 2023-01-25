@@ -52,6 +52,7 @@ header h1 {
     font-size: 17px;
     font-weight: 700;
     color: #14172D;
+    text-align: center;
 }
 
 #show-creator-btn {
@@ -109,6 +110,12 @@ footer nav a {
 
 #home, #explorer, #bookmark {
     position: relative;
+}
+
+@media (max-width: 361px) {
+    .container {
+        margin: 0 20px;
+    }
 }
 
 

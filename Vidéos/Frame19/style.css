@@ -15,7 +15,7 @@ body {
 }
 
 .video-wrap {
-    height: 219.38px;
+    width: 100%;
 }
 
 .video-wrap video {
@@ -268,4 +268,10 @@ body {
 .send-msg-box span img {
     height: 18px;
     width: 18px;
+}
+
+@media (max-width: 361px) {
+    .community-box {
+        padding: 0 20px;
+    }
 }

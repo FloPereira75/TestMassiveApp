@@ -80,3 +80,9 @@ footer nav a {
 #home, #explorer, #bookmark {
     position: relative;
 }
+
+@media (max-width: 361px) {
+    .container {
+        margin: 0 20px 120px;
+    }
+}

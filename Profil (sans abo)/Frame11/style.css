@@ -341,3 +341,9 @@ footer {
     border: none;
     border-radius: 80px;
 }
+
+@media (max-width: 361px) {
+    .container {
+        margin: 0 20px;
+    }
+}

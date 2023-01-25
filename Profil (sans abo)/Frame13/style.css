@@ -144,3 +144,9 @@ body {
     background-color: rgba(217, 217, 217, 0.2);
     height: 47px;
 }
+
+@media (max-width: 361px) {
+    .container {
+        margin: 0 20px;
+    }
+}
