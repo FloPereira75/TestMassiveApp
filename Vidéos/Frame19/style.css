@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Satoshi', sans-serif;
-    overflow-y: hidden;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -157,11 +157,11 @@ body {
     gap: 30px;
     margin: 40px 0 50px;
     padding: 0 30px;
-    overflow-y: auto;
-    height: 275px;
+    /* overflow-y: auto; */
+    /* height: 275px; */
 }
 
-@media (max-height: 750px) {
+/* @media (max-height: 750px) {
     .community-box {
         height: 200px;
     }
@@ -171,7 +171,7 @@ body {
     .community-box {
         height: 125px;
     }
-}
+} */
 
 /* RETIRE LA BARRE DE SCROLL */
 .community-box::-webkit-scrollbar {
@@ -249,7 +249,7 @@ body {
 }
 
 .send-msg-box {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: flex;
     align-items: center;
