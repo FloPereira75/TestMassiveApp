@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Satoshi', sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 .video-box {
@@ -156,7 +157,28 @@ body {
     gap: 30px;
     margin: 40px 0 50px;
     padding: 0 30px;
+    overflow-y: auto;
+    height: 275px;
 }
+
+@media (max-height: 750px) {
+    .community-box {
+        height: 200px;
+    }
+}
+
+@media (max-height: 700px) {
+    .community-box {
+        height: 125px;
+    }
+}
+
+/* RETIRE LA BARRE DE SCROLL */
+.community-box::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+/* FIN */
 
 .community-msg {
     position: relative;

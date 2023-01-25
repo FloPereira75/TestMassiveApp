@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Satoshi', sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 .video-box {
@@ -153,7 +154,28 @@ body {
 .video-description {
     padding: 0 30px;
     margin-top: 40px;
+    overflow-y: auto;
+    height: 350px;
 }
+
+@media (max-height: 750px) {
+    .video-description {
+        height: 275px;
+    }
+}
+
+@media (max-height: 700px) {
+    .video-description {
+        height: 190px;
+    }
+}
+
+/* RETIRE LA BARRE DE SCROLL */
+.video-description::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+/* FIN */
 
 .description-title {
     font-size: 17px;
