@@ -1,0 +1,222 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Satoshi', sans-serif;
+    overflow-x: hidden;
+}
+
+.form-card {
+    margin-top: 214px;
+    padding: 18px 30px 32px;
+    background-color: #FFF;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.form-card header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-card header p:first-child {
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+    margin-left: -14px;
+}
+
+.annulation {
+    font-size: 16px;
+    letter-spacing: -0.035em;
+    color: #007AFF;
+}
+
+.buying-infos {
+    margin-top: 24px;
+}
+
+.logo-name-price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buyer-name {
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+}
+
+.price {
+    color: rgba(125, 125, 125, 1);
+    font-size: 15px;
+}
+
+.divider {
+    margin: 13px 0;
+    width: 100%;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.details-box {
+    display: flex;
+    gap: 12px;
+}
+
+.details-box p:first-child {
+    font-size: 12px;
+    color: #979797;
+    text-transform: uppercase;
+}
+
+.details-box ul {
+    list-style: none;
+}
+
+.details-box ul li {
+    font-size: 13px;
+    color: #000;
+}
+
+/* form {
+
+} */
+
+.payment-choice {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.payment-box {
+    box-sizing: border-box;
+    border: 1px solid #B2BCCA;
+    border-radius: 4px;
+    padding: 14px;
+}
+
+.active.payment-box {
+    background-color: #e6eef9;
+    border-color: #1660CF;
+}
+
+.radio-grp {
+    display: flex;
+    gap: 8px;
+}
+
+.head-payment-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.head-payment-title {
+    font-weight: 700;
+    font-size: 13px;
+    color: #000;
+}
+
+.head-payment-txt {
+    font-size: 10px;
+    line-height: 140%;
+    color: #828282;
+}
+
+.input-grp {
+    position: relative;
+}
+
+.label-card {
+    font-size: 10px;
+    color: #828282;
+    position: relative;
+    left: 6px;
+    top: 7px;
+    background: #e6eef9;
+    padding: 0 8px;
+}
+
+.label-card::after {
+    content: '';
+    position: absolute;
+}
+
+.input-grp span {
+    display: flex;
+    align-items: center;
+}
+
+.card-input {
+    width: 100%;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-color: #B2BCCA;  /* #1660CF */
+    border-radius: 4px;
+    padding: 10px 14px 3px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #4F4F4F;
+    outline: none;
+    background-color: transparent;
+}
+.active.card-input {
+    border-color: #1660CF;
+}
+
+.card-input::placeholder {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+}
+
+.valid-icon {
+    position: absolute;
+    right: 10px;
+}
+
+.save-card {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    gap: 11px;
+    margin-top: 13px;
+}
+
+.save-card label {
+    font-size: 14px;
+    line-height: 19px;
+    color: #4F4F4F;
+}
+
+.save-card input[type="checkbox"] {
+    width: 16px;
+}
+
+#sub-btn {
+    font-family: 'Satoshi';
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #FFFEFC;
+    padding: 16px 32px;
+    background: #1660CF;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 21px;
+}

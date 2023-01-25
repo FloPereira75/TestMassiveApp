@@ -1,0 +1,146 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    overflow-x: hidden;
+}
+
+.bckg-top-img {
+    position: absolute;
+    top: 0;
+    background-image: url(assets/Rectangle24.svg);
+    width: 100%;
+    height: 173px;
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+}
+
+.container {
+    margin: 0 30px;
+}
+
+.back-or-settings-box {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 62px 0 33px;
+}
+
+.profil-creator-picture {
+    width: 81px;
+    height: 81px;
+    background-image: url(assets/profil-pic1.svg);
+    border-radius: 50%;
+}
+
+.profil-creator-head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.profil-creator-name {
+    color: #14172D;
+    letter-spacing: -0.02em;
+}
+
+.suscribe {
+    display: flex;
+    align-items: center;
+    color: #000A6B;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    gap: 12px;
+}
+
+.suscribe span {
+    display: flex;
+}
+
+.profil-creator-resume {
+    margin-top: 6px;
+}
+
+.profil-creator-resume :first-child {
+    font-size: 13px;
+    color: #9CA3AF;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+}
+
+#resume {
+    font-size: 14px;
+    color: #9CA3AF;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+}
+
+.category-selector {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    gap: 30px;
+}
+
+.category {
+    color: #9CA3AF;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.active.category {
+    color: #070B30;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+.community-box {
+    margin: 20px 0 50px;
+}
+
+.community-loading-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.community-loading-box-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.community-loading-box-txt p {
+    width: 215px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #14172D;
+    text-align: center;
+}
+
+#creator-name {
+    font-weight: 700;
+}
+
+.loading-div {
+    width: 100%;
+    background-color: rgba(217, 217, 217, 0.2);
+    height: 47px;
+}

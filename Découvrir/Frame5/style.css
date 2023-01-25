@@ -1,0 +1,291 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    margin: 0 30px 120px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #000000;
+}
+
+.research-box {
+    margin-top: 25px;
+}
+
+.input-icon-box {
+    background-color: #EEF2F5;
+    display: flex;
+    padding-left: 15px;
+    border-radius: 8px;
+}
+
+.input-icon-box input {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.input-icon-box input::placeholder {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 14px;
+    color: #9CA3AF;
+}
+
+
+.research-category-list {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    overflow-x: auto; /* Permet de scroller dans le slider, pour visualiser (mais bloque la box shadow bottom)*/
+}
+
+/* RETIRE LA BARRE DE SCROLL */
+.research-category-list::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+/* FIN */
+
+.category {
+    font-size: 14px;
+    color: #9CA3AF;
+    background-color: transparent;
+    padding: 7px 10px;
+    border: 1px solid #9CA3AF;
+    border-radius: 30px;
+}
+
+
+.videos-tendancies-box {
+    margin-top: 36px;
+}
+
+.span-title-seemore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.span-title-seemore h2 {
+    font-size: 17px;
+    color: #1F2E45;
+    letter-spacing: -0.02em;
+}
+
+.see-more {
+    color: #790D0D;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.slider-videos-box {
+    display: -webkit-box;
+    gap: 10px;
+    margin-top: 20px;
+    overflow-x: auto; /* Permet de scroller dans le slider, pour visualiser (mais bloque la box shadow bottom) */
+}
+
+/* RETIRE LA BARRE DE SCROLL */
+.slider-videos-box::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+/* FIN */
+
+.box-video {
+    width: 240px;
+    height: auto;
+    background-color: #FFF;
+    box-shadow: 0px 8px 24px rgb(156 163 175 / 20%);
+    border-radius: 10px;
+}
+
+.video-illustration {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/* POUR L'EXEMPLE ILLUSTRATION VIDEO YOUTUBE */
+
+#first-frame-yt {
+    background-image: url(assets/Frame60.svg);
+}
+
+#second-frame-yt {
+    background-image: url(assets/youtube-tapie.jpg);
+}
+
+#third-frame-yt {
+    background-image: url(assets/youtube-pecresse.jpg);
+}
+
+/* FIN EXEMPLE ILLUSTRATION VIDEO YOUTUBE */
+
+.video-time {
+    position: absolute;
+    right: 6px;
+    bottom: 5px;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 10px;
+    font-weight: 500;
+    padding: 1px 3px;
+    letter-spacing: -0.02em;
+}
+
+.video-infos {
+    padding: 10px;
+}
+
+.youtuber-name {
+    color: #9CA3AF;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    opacity: 0.88;
+}
+
+.video-name {
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    color: #1F2E45;
+    margin-top: 2px;
+}
+
+.creators-tendancies-box {
+    margin: 36px 0;
+}
+
+.slider-creators-box {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+    overflow-x: auto; /* Permet de scroller dans le slider, pour visualiser (mais bloque la box shadow bottom) */
+}
+
+/* RETIRE LA BARRE DE SCROLL */
+.slider-creators-box::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+/* FIN */
+
+.box-creator {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.creator-profil-pic {
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+/* POUR L'EXEMPLE PROFIL PICTURE YOUTUBE CREATOR */
+
+#first-profile {
+    background-image: url(assets/profil-pic1.svg);
+}
+
+#second-profile {
+    background-image: url(assets/profil-pic2.svg);
+}
+
+#third-profile {
+    background-image: url(assets/profil-pic3.svg);
+}
+
+#fourth-profile {
+    background-image: url(assets/public-senat.svg);
+}
+
+#fifth-profile {
+    background-image: url(assets/hugo-decrypte.jpg);
+}
+
+/* FIN EXEMPLE PROFIL PICTURE YOUTUBE CREATOR */
+
+.creator-name {
+    color: #14172D;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 81px;
+    padding: 10px 51px;
+    background: #070B30;
+    box-shadow: 0px 8px 24px rgb(17 17 26 / 10%), 0px 16px 56px rgb(17 17 26 / 10%), 0px 24px 80px rgb(17 17 26 / 10%);
+}
+
+footer nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav a {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.active.line-nav {
+    display: block;
+}
+
+.line-nav {
+    display: none;
+    position: absolute;
+    bottom: 2px;
+    background: #790D0D;;
+    height: 3px;
+    width: 16px;
+}
+
+#home, #explorer, #bookmark {
+    position: relative;
+}

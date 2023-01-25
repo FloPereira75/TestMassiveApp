@@ -1,0 +1,343 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    overflow-x: hidden;
+}
+
+.bckg-top-img {
+    position: absolute;
+    top: 0;
+    background-image: url(assets/Rectangle24.svg);
+    width: 100%;
+    height: 173px;
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+}
+
+.container {
+    margin: 0 30px;
+}
+
+.back-or-settings-box {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 62px 0 33px;
+}
+
+.profil-creator-picture {
+    width: 81px;
+    height: 81px;
+    background-image: url(assets/profil-pic1.svg);
+    border-radius: 50%;
+}
+
+.profil-creator-head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.profil-creator-name {
+    letter-spacing: -0.02em;
+    color: #14172D;
+}
+
+.suscribe {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: -0.02em;
+    color: #000A6B;
+    gap: 12px;
+}
+
+.suscribe span {
+    display: flex;
+}
+
+.profil-creator-resume {
+    margin-top: 6px;
+}
+
+.profil-creator-resume :first-child {
+    font-size: 13px;
+    color: #9CA3AF;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+}
+
+#resume {
+    font-size: 14px;
+    color: #9CA3AF;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+}
+
+.category-selector {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    gap: 30px;
+}
+
+.category {
+    color: #9CA3AF;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.active.category {
+    color: #070B30;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+
+.publication-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0 125px;
+}
+
+.card {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0 20px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-name-time {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.user-name {
+    color: #0F1419;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.user-time-publi {
+    color: #536471;
+    font-size: 14px;
+}
+
+.card-caption {
+    background: #FFFFFF;
+    margin-top: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 24px rgb(156 163 175 / 20%);
+}
+
+.card-video {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 168px;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(265.45deg, #676769 0.04%, #8A7261 47.79%, #79797A 107.89%), linear-gradient(180deg, rgba(0, 0, 0, 0) 60.94%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.suscribe-option-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.suscribe-option-txt p {
+    width: 199px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.card-video-time {
+    position: absolute;
+    right: 6px;
+    bottom: 5px;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1px 3px;
+    letter-spacing: -0.02em;
+}
+
+.card-infos {
+    padding: 13px;
+}
+
+.article {
+    color: #790D0D;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.article-title {
+    color: rgba(31, 46, 69, 1);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 5px 0;
+}
+
+.article-content {
+    color: #9CA3AF;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+}
+
+.read-more {
+    color: rgba(8, 10, 100, 1);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.video-title {
+    color: #1F2E45;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.card-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.likes-comments {
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comments {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscription {
+    display: flex;
+    align-items: center;
+}
+
+.article-loading-txt {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.loading-div {
+    width: 100%;
+    height: 13px;
+    background-color: rgba(217, 217, 217, 0.2);
+}
+
+.loading-div:last-child {
+    width: 55%;
+}
+
+.article-loading-txt span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 25px 37px;
+    color: #FFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 105px;
+    background: #070B30;
+    box-shadow: 0px 8px 24px rgb(17 17 26 / 10%), 0px 16px 56px rgb(17 17 26 / 10%), 0px 24px 80px rgb(17 17 26 / 10%);
+}
+
+.abo-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.abo-price p:first-child {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.abo-price p:first-child span {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.abo-price a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #9CA3AF;
+}
+
+.suscribe-btn {
+    width: 138px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #070B30;
+    background: #FFFFFF;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 80px;
+}

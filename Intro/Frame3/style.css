@@ -1,0 +1,163 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #070B30;
+    padding: 0 30px;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #FFF;
+    margin-top: 71px;
+}
+
+header p {
+    font-size: 15px;
+    color: #9CA3AF;
+    margin-bottom: 27px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    padding: 0 30px;
+    margin-top: 49px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    color: #14172D;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.input-group input {
+    position: relative;
+    padding: 0 10px 7px;
+    border-width: 1px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    font-family: 'Satoshi', sans-serif;
+    font-style: 15px;
+    color: #9ca3af;
+}
+
+.input-group input[type="password"] {
+    font-size: 22px;
+    color: #9CA3AF;
+}
+
+#icon-pass {
+    position: absolute;
+    right: 10px;
+    bottom: 11px;
+}
+
+.checkbox-validation {
+    display: flex;
+    align-items: baseline;
+    gap: 11px;
+}
+
+#validation {
+    accent-color: #020A69;
+    -ms-transform: scale(1.25); /* IE */
+    -moz-transform: scale(1.25); /* FF */
+    -webkit-transform: scale(1.25); /* Safari and Chrome */
+    -o-transform: scale(1.25); /* Opera */
+    transform: scale(1.25);
+}
+
+.checkbox-validation label {
+    font-size: 14px;
+    color: #9CA3AF;
+}
+
+#termes {
+    color: #020A69;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.btn-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 16px;
+}
+
+.btn-box input {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+#create-count-btn {
+    font-family: 'Satoshi', sans-serif;
+    color: #FFF;
+    font-weight: 500;
+    background: linear-gradient(87.79deg, #000A6B 0%, #790D0D 100%);
+}
+
+.sign-google-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#sign-in-google {
+    font-family: 'Satoshi', sans-serif;
+    color: #000;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid #D1CFCF;
+}
+
+.btn-box img {
+    width: 16px;
+    position: absolute;
+    left: 17%
+}
+
+#already-user {
+    color: #424244;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin: 33px 0 80px;
+}
+
+#already-user span {
+    color: #020a69;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Massive App</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    </head>
+<body>
+    <div class="form-card">
+        <header>
+            <p>Achat</p>
+            <p class="annulation">Annuler</p>
+        </header>
+        <article class="buying-infos">
+            <div class="logo-name-price">
+                <div class="logo"><img src="assets/logoapp.svg" alt="logo buyer"></div>
+                <div>
+                    <p class="buyer-name">Gaspard G <span class="duration">(1 mois)</span></p>
+                    <p class="price">5,99€ - <span class="type-subscription">Abonnement mensuel</span></p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="details-box">
+                <p>Details</p>
+                <ul>
+                    <li>- Accès complet au contenu de ce créateur</li>
+                    <li>- Message direct avec cet utilisateur</li>
+                    <li>- Annuler votre abonnement à tout moment</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+        </article>
+        <form action="#">
+            <div class="payment-choice">
+                <div class="payment-box">
+                    <div class="head-payment-box">
+                        <div class="radio-grp">
+                            <input type="radio" name="paypal" id="paypal">
+                            <p class="head-payment-title">PayPal</p>
+                        </div>
+                        <p class="head-payment-txt">Vous serez redirigé vers le site PayPal après avoir soumis votre commande</p>
+                        <span class="logo-card"><img src="assets/PayPal.svg" alt=""></span>
+                    </div>
+                </div>
+                <div class="payment-box active">
+                    <div class="head-payment-box">
+                        <div class="radio-grp">
+                            <input type="radio" name="paypal" id="paypal" class="active-radio">
+                            <p class="head-payment-title">Carte Bancaire</p>
+                        </div>
+                        <div class="card-box">
+                            <span class="logo-card"><img src="assets/Visa.svg" alt=""></span>
+                            <span class="logo-card"><img src="assets/Discover.svg" alt=""></span>
+                            <span class="logo-card"><img src="assets/Maestro.svg" alt=""></span>
+                            <span class="logo-card"><img src="assets/Mastercard.svg" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="input-grp">
+                        <label for="card-number" class="label-card">Numéro de carte</label>
+                        <span>
+                            <input 
+                            type="text" 
+                            name="card-number"
+                            class="active card-input" 
+                            id="card-number"
+                            >
+                            <img src="assets/valid.svg" class="valid-icon" alt="valid icon">
+                        </span>
+                    </div>
+                    <div class="input-grp">
+                        <label for="card-date" class="label-card">Date d'expiration</label>
+                        <span>
+                            <input
+                            type="text" 
+                            name="card-date" 
+                            class="card-input" 
+                            id="card-date" 
+                            placeholder="MM/YY"
+                            >
+                        </span>
+                    </div>
+                    <div class="input-grp">
+                        <label for="card-password" class="label-card">Code de sécurité</label>
+                        <span>
+                            <input 
+                            type="text" 
+                            name="card-password" 
+                            class="card-input" 
+                            id="card-password" 
+                            placeholder="***"
+                            >
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span class="save-card">
+                <label for="save-card-btn">Enregistrer la carte pour les futurs paiements</label>
+                <input type="checkbox" name="save-card-btn" id="save-card-btn">
+            </span>
+            <input type="submit" id="sub-btn" value="S'abonner  | 5.99€ / mois">
+        </form>
+    </div>
+</body>
+</html>

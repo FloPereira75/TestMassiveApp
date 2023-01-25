@@ -1,0 +1,34 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    background-color: #070B30;
+    color: #9CA3AF;
+    overflow: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-txt {
+    font-size: 15px;
+}
+
+.loading-circle-box {
+    margin-top: 81px;
+    padding: 10px;
+}
+
+.loading-circle-box img {
+    height: 90px;
+    width: 90px;
+}
