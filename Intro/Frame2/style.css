@@ -9,7 +9,7 @@ body {
     font-family: 'Satoshi', sans-serif;
     background-color: #070B30;
     color: #FFF;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .bckg-img {
