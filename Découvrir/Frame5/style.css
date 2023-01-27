@@ -5,9 +5,13 @@
 }
 
 body {
+    width: 100%;
     font-family: 'Satoshi', sans-serif;
-    /* overflow-x: hidden; */
     -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+    overflow-x: hidden;
 }
 
 .container {
