@@ -10,19 +10,16 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.wrap {
-    overflow-x: hidden;
-}
-
 .container {
-    margin: 0 30px 120px;
+    margin-bottom: 100px;
+    overflow-x: hidden;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 70px;
+    margin: 70px 30px 0;
 }
 
 header h1 {
@@ -40,6 +37,7 @@ header h1 {
     display: flex;
     padding-left: 15px;
     border-radius: 8px;
+    margin: 0 30px;
 }
 
 .input-icon-box input {
@@ -59,8 +57,8 @@ header h1 {
 .research-category-list {
     display: flex;
     gap: 8px;
-    margin-top: 16px;
-    /* overflow-x: auto; */ /* Permet de scroller dans le slider, pour visualiser (mais bloque la box shadow bottom)*/
+    margin: 16px 0 -32px 30px;
+    overflow-x: auto;
 }
 
 /* RETIRE LA BARRE DE SCROLL */
@@ -88,7 +86,8 @@ header h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: auto;
+    margin: 0 30px;
 }
 
 .span-title-seemore h2 {
@@ -105,10 +104,10 @@ header h1 {
 }
 
 .slider-videos-box {
-    display: inline-flex;
-    gap: 10px;
-    margin-top: 20px;
-    /* overflow-x: auto; */ /* Permet de scroller dans le slider, pour visualiser (mais bloque la box shadow bottom) */
+    display: -webkit-box;
+    margin: 20px 0 -34px 30px;
+    padding: 0 0 16px 0;
+    overflow-x: auto; 
 }
 
 /* RETIRE LA BARRE DE SCROLL */
@@ -124,6 +123,7 @@ header h1 {
     background-color: #FFF;
     box-shadow: 0px 8px 24px rgb(156 163 175 / 20%);
     border-radius: 10px;
+    margin-right: 10px;
 }
 
 .video-illustration {
@@ -191,8 +191,8 @@ header h1 {
 .slider-creators-box {
     display: flex;
     gap: 5px;
-    margin-top: 20px;
-    /* overflow-x: auto; */ /* Permet de scroller dans le slider, pour visualiser (mais bloque la box shadow bottom) */
+    margin: 20px 0 0 30px;
+    overflow-x: auto;
 }
 
 /* RETIRE LA BARRE DE SCROLL */
@@ -294,8 +294,8 @@ footer nav a {
     position: relative;
 }
 
-@media (max-width: 361px) {
+/* @media (max-width: 361px) {
     .container {
         margin: 0 20px 120px;
     }
-}
+} */
