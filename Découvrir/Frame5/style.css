@@ -105,7 +105,7 @@ header h1 {
 }
 
 .slider-videos-box {
-    display: -webkit-box;
+    display: inline-flex;
     gap: 10px;
     margin-top: 20px;
     /* overflow-x: auto; */ /* Permet de scroller dans le slider, pour visualiser (mais bloque la box shadow bottom) */
