@@ -57,7 +57,7 @@ header h1 {
 .research-category-list {
     display: flex;
     gap: 8px;
-    margin: 16px 0 -32px 30px;
+    margin: 20px 0 0 30px;
     overflow-x: auto;
 }
 
@@ -79,7 +79,7 @@ header h1 {
 
 
 .videos-tendancies-box {
-    margin-top: 36px;
+    margin-top: 30px;
 }
 
 .span-title-seemore {
@@ -294,8 +294,23 @@ footer nav a {
     position: relative;
 }
 
-/* @media (max-width: 361px) {
-    .container {
-        margin: 0 20px 120px;
+@media (max-width: 361px) {
+    header {
+        margin: 70px 20px 0;
     }
-} */
+    .input-icon-box {
+        margin: 0 20px;
+    }
+    .research-category-list {
+        margin: 20px 0 0 20px;
+    }
+    .span-title-seemore {
+        margin: 0 20px;
+    }
+    .slider-videos-box {
+        margin: 20px 0 -34px 20px;
+    }
+    .slider-creators-box {
+        margin: 20 0 0 20px;
+    }
+}
